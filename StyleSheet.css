@@ -1,0 +1,181 @@
+﻿header{
+    color: white;
+    background-color: #4c8930;
+    text-align: right;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1em;  
+    }
+
+select{
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+a {
+    color: #a0a0a0;
+    text-align: left;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    }
+
+p {
+    font-family: "Open Sans";
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 42px;
+    font-weight: 400;
+    margin-top: 7%;       
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 400; 
+}
+
+button{
+    color: white;
+    background-color: white;
+    font-family: "Open Sans";
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+input {
+    border-width: 1px;
+    border-color: #cbcbcb;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+footer{
+    color:white;
+    background-color: black;
+}
+
+#Navigation{
+    padding: 2em;
+}  
+
+
+#Picture {
+    text-align: center;
+}
+
+
+#GreenButton {
+    color: white;
+    background-color: #4c8930;
+    font-family: "Open Sans";
+    border-width: 1px;
+    border-color: #4c8930;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#SearhButton{
+
+}
+
+#LearnButton{
+    color: white;
+    background-color: #4c8930;
+    font-family: "Open Sans";
+    border-width: 1px;
+    border-color: #4c8930;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#PictureButton {
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    width:360px;
+    height:222px;
+    font-family: "Open Sans";
+    font-size: 21px;
+}
+
+#Data {
+    color: black;
+    text-align: center;
+    font-family: "Open Sans";
+}
+
+#News {
+    background-color: #cbcbcb;
+    text-align:center;
+    padding: 2em;
+}
+
+#NewsButton{
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+    width: 26em;
+    min-height: 12em;
+    color:black;
+    margin-top: 2em;
+    text-align:left;
+    }
+
+#References{
+    border-width: 1px;
+    border-color: #cbcbcb;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    width: 17%;
+    height: 300px;
+}
+
+#SoMeButton{
+    border-width: 0px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: black;
+    text-align: center;
+    width:40px;
+    height:40px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 20em;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+#modal-content {
+    background-color: white;
+   border-width: 1px;
+    border-color: #cbcbcb;
+    border-style: solid;
+    border-radius: 5px;    
+    margin: auto;
+    padding: 2em;
+    width: 80%;
+}

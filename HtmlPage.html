@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="StyleSheet.css">  
+        <script src="JavaScript.js"></script>   
+</head>
+<body>
+    <header>
+        <a style= "color: white" onclick="openNews()">News</a>
+        <a style= "color: white; margin-left: 1%;" onclick="openIntranet()">Intranet</a>
+        <select style="color: black; margin-left: 1%;">
+            <option value="english">In english</option>
+            <option value="finnish">Suomeksi</option>
+        </select>       
+    </header>
+    <div id="Navigation">
+        <div style="display: inline-block; width: 69%">
+            <img src=Kuvat/liana-logo-RGB.png style="width:140px; vertical-align:middle;">
+            <a style="margin-left: 4%;" onclick="openCompany()">Company</a>
+            <a style="margin-left: 1%;" onclick="openProducts()">Products</a>
+            <a style="margin-left: 1%;" onclick="contactUs()">Contact Us</a>
+        </div>
+        <form id="search" style="text-align: right; display: inline-block; width: 30%">
+            <input type="search" placeholder="Search">
+            <button id="GreenButton" onclick="search()">Search</button>
+        </form>
+    </div>  
+    <div id="Picture" style="background-image: url(Kuvat/4L7C5828.png); background-size: 100%; height: 400px; background-repeat: no-repeat; background-position: center; display: block;">   
+        <br />
+        <h1>Software fueling digital marketing</h1>
+        <button id="LearnButton" style="padding:0.5em; margin-top: 1%" onclick="learnMore()">Learn more</button>
+        <div id="myModal" class="modal">
+            <div id="modal-content">
+                <span class="close">&times;</span>
+                <p>Here you can find more information</p>
+            </div>
+
+        </div>
+    </div>
+    <div style="text-align: center; padding: 3em;">
+        <button id="PictureButton" style="background-image: url(Kuvat/sisallontuotantoa.png);" onclick="openCompany()"><b>Company</b></button>
+        <button id="PictureButton" style="background-image: url(Kuvat/markkinoinninautomaation-mvv.png); margin-left: 1%; margin-right: 1%" onclick="openProducts()"><b>Products</b></button>
+        <button id="PictureButton" style="background-image: url(Kuvat/yini.png);" onclick="contactUs()"><b>Contact Us</b></button>
+    </div>
+    <div id="Data" style="text-align: center">
+        <img src=Kuvat/Business.png style="height:54px; width:61px; display:inline-block; vertical-align:middle; margin-bottom: 3%;">
+        <div id="Business" style="display: inline-block; margin-left:2%;">
+            <p style="font-size:42px;">3000</p>
+            <p style="font-size:15px">Clients</p>
+        </div>
+        <img src=Kuvat/Face.png style="height:60px; width:60px; display:inline-block; vertical-align:middle; margin-bottom: 3%; margin-left:5%;">
+        <div id="Face" style="display: inline-block; margin-left:2%;">
+            <p style="font-size:42px">180</p>
+            <p style="font-size:15px">Employees</p>
+        </div>
+        <img src=Kuvat/Public.png style="height:60px; width:60px; display:inline-block; vertical-align:middle; margin-bottom: 3%; margin-left:5%;">
+        <div id="Public" style="display: inline-block; margin-left:2%;">
+            <p style="font-size:42px">10000</p>
+            <p style="font-size:15px">Daily users</p>
+        </div>
+    </div>
+    <div id="News">
+        <h2><b>Latest News</b></h2>
+        <div style="text-align: center; ">
+            <button id="NewsButton" style="vertical-align: top;" onclick="openNews(1)">
+                <p style="text-align: left;">27.07.2016</p>
+                <p><b>Liana Technologies and Encode Solutions merge to create unique mobile solutions</b></p></button>
+            <button id="NewsButton" style="margin-left: 1%; margin-right: 1%; vertical-align: top;" onclick="openNews(2)">
+                <p style="text-align: left;">28.01.2016</p>
+                <p><b>From a local startup a global player: Liana Technologies among the forerunners of digital marketing technology</b></p></button>
+             <button id="NewsButton" style="vertical-align: top;" onclick="openNews(3)">
+                 <p style="text-align: left;">02.07.2015</p>
+                 <p><b>Liana Technologies Hong Kong launched a series of digital marketing in June</b></p></button>
+        </div>
+    </div>
+    <div style="text-align:center; padding-bottom: 5em;">
+        <h2 style="padding: 1em;"><b>References</b></h2>
+        <div style="display: inline-block; vertical-align: text-top;">
+            <div id="References" style="display: inline-block; vertical-align: top;">
+                <button onclick="openReferences(1)"><img src=Kuvat/Layer1.png></button>
+                <div style="border-top: 1px solid #cbcbcb;">
+                    <p style="font-size:22px; padding-top: 1em;"><b>Robert Bosch</b></p>
+                    <p style="font-size: 15px">Boch is a multinational engineering and electronics company.</p>
+                </div>
+            </div>
+            <div id="References" style="display: inline-block; vertical-align: top; margin-left: 1%">
+                <button onclick="openReferences(2)"><img src=Kuvat/Layer2.png></button>
+                    <div style="border-top: 1px solid #cbcbcb;">
+                        <p style="font-size:22px; padding-top: 1em;"><b>The Body Shop</b></p>
+                        <p style="font-size: 15px">The Body Shop is a global beauty brand and it has more than 3,000 stores in more than 60 countries.</p>
+                    </div>
+            </div>
+            <div id="References" style="display: inline-block; vertical-align: top; margin-left: 1%">
+                <button onclick="openReferences(3)"><img src=Kuvat/Layer3.png></button>
+                    <div style="border-top: 1px solid #cbcbcb;">
+                        <p style="font-size:22px; padding-top: 1em;"><b>Lapland Hotels</b></p>
+                        <p style="font-size: 15px">Lapland Hotels is the largest and the most diverse hotel chain in Lapland.</p>
+                    </div>
+            </div>
+            <div id="References" style="display: inline-block; vertical-align: top; margin-left: 1%">
+                <button onclick="openReferences(4)"><img src=Kuvat/Layer4.png></button>
+                <div style="border-top: 1px solid #cbcbcb;">
+                    <p style="font-size:22px; padding-top: 1em;"><b>IKEA</b></p>
+                    <p style="font-size: 15px">IKEA is a multinational furniture store.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="border-top: 1px solid #cbcbcb; text-align: center; padding: 3em;">
+        <h2><b>Subscribe to our newslist</b></h2>
+        <p style="padding: 1em; font-size:17px;">Follow our story and get the latest promotonial <br /> news about our products and events</p>
+        <form id="subscribeEmail">
+            <input style="padding: 0.5em; width: 17%;" type="email" placeholder="Your email address">
+            <button id="GreenButton" style="padding: 0.5em;" onclick="subscribe()">Subscribe</button>
+        </form>
+    </div>
+    <footer style="padding-top: 3em; padding-bottom:4em; padding-left: 4em;">
+        <div style="display: inline-block; height: 155px">
+            <p style="padding-bottom: 2em; font-size: 20px; vertical-align: top;"><b>Liana Technologies</b></p>
+            <p style="font-size: 15px;"><b>Sales and inquiries</b><br />Email: sales@lianatech.com<br />Phone: +358 10 387 7053</p>
+        </div>
+        <div style="display: inline-block; margin-left: 3%; vertical-align: top; margin-top: 6%">
+            <div style="display: inline-block;">
+                <button id="GreenButton" onclick="contactUs()" style="padding: 0.5em;">Contact Us</button>
+            </div>
+        </div>
+        <div style="display: inline-block; vertical-align:top; text-align: right; height: 150px; width: 75%">
+            <div style="display:block;">
+                <a style="color: white;" onclick="openCompany()">Company</a>
+                <a style="margin-left: 1%; color: white" onclick="openProducts()">Products</a>
+                <a style="margin-left: 1%; color: white" onclick="contactUs()">Contact Us</a>
+                <a style="margin-left: 1%; color: white" onclick="openNews()">News</a>
+                <a style="margin-left: 1%; color: white" onclick="openIntranet()">Intranet</a>
+            </div>
+            <div style="display: block; margin-top: 6%;vertical-align: bottom;">
+                <button id="SoMeButton" style="background-image: url(Kuvat/facebook.png);" onclick="openSocialMedia('facebook')"><b></b></button>
+                <button id="SoMeButton" style="background-image: url(Kuvat/twitter-logo-final.png); margin-left: 1%; margin-right: 1%" onclick="openSocialMedia('twitter')"><b></b></button>
+                <button id="SoMeButton" style="background-image: url(Kuvat/linkedin-icon.png);" onclick="openSocialMedia('linkedin')"><b></b></button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
